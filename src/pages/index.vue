@@ -30,7 +30,8 @@ const router = useRouter();
 
 const loadGiveaways = async () => {
   try {
-    const response = await axios.get('http://localhost:3000/api/giveaways');
+    const response = await axios.get('https://7519-45-8-144-35.ngrok-free.app/api/giveaways');
+    console.log('API Response:', response.data); // Добавьте это для проверки данных
     giveaways.value = response.data.filter(giveaway => giveaway.title); // фильтрация пустых элементов
   } catch (error) {
     console.error('Ошибка загрузки данных', error);

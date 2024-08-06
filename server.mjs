@@ -4,10 +4,15 @@ import { Telegraf } from 'telegraf';
 import cors from 'cors';
 import Giveaway from './models/Giveaway.js';
 import winston from 'winston';
+import path from 'path';
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: '*', // Разрешает все источники. Для более безопасного варианта укажите точные источники.
+  methods: ['GET', 'POST'], // Разрешает только эти методы
+  allowedHeaders: ['Content-Type', 'Authorization'] // Разрешает только эти заголовки
+}));
 
 const bot = new Telegraf('7451733807:AAH8I1giaTwOoENmhDfQggODXRvWdf-s5hw');
 
@@ -26,7 +31,7 @@ if (process.env.NODE_ENV !== 'production') {
   }));
 }
 
-mongoose.connect('mongodb://localhost:27017/data', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/data')
   .then(() => {
     logger.info('Connected to MongoDB');
     console.log('Connected to MongoDB');
@@ -77,92 +82,17 @@ app.post('/api/check-subscription', async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 3000;
+// Настройка для обслуживания статических файлов из папки 'dist'
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Обработка маршрутов для SPA
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
   logger.info(`Server is listening on http://localhost:${port}`);
   console.log(`Server is listening on http://localhost:${port}`);
 });
-
-// const loadInitialData = async () => {
-//   const count = await Giveaway.countDocuments();
-//   if (count === 0) {
-//     const initialData = [
-//       {
-//         id: 1,
-//         title: 'Розыгрыш 1',
-//         description: 'Описание розыгрыша 1',
-//         image: 'https://cdn.vuetifyjs.com/images/parallax/material.jpg',
-//         endDate: new Date('2023-12-31'),
-//         isActive: true,
-//         channels: [
-//           {
-//             id: 1,
-//             name: 'Канал 1',
-//             link: 'https://t.me/seo_automatization',
-//             avatar: 'https://via.placeholder.com/48',
-//             subscribed: false
-//           },
-//           {
-//             id: 2,
-//             name: 'Канал 2',
-//             link: 'https://t.me/seo_automatization',
-//             avatar: 'https://via.placeholder.com/48',
-//             subscribed: false
-//           }
-//         ]
-//       },
-//       {
-//         id: 2,
-//         title: 'Розыгрыш 2',
-//         description: 'Описание розыгрыша 2',
-//         image: 'https://cdn.vuetifyjs.com/images/parallax/material.jpg',
-//         endDate: new Date('2024-01-15'),
-//         isActive: true,
-//         channels: [
-//           {
-//             id: 3,
-//             name: 'Канал 3',
-//             link: 'https://t.me/seo_automatization',
-//             avatar: 'https://via.placeholder.com/48',
-//             subscribed: false
-//           },
-//           {
-//             id: 4,
-//             name: 'Канал 4',
-//             link: 'https://t.me/seo_automatization',
-//             avatar: 'https://via.placeholder.com/48',
-//             subscribed: false
-//           }
-//         ]
-//       },
-//       {
-//         id: 3,
-//         title: 'Розыгрыш 3',
-//         description: 'Описание розыгрыша 3',
-//         image: 'https://cdn.vuetifyjs.com/images/parallax/material.jpg',
-//         endDate: new Date('2024-02-01'),
-//         isActive: false,
-//         channels: [
-//           {
-//             id: 5,
-//             name: 'Канал 5',
-//             link: 'https://t.me/seo_automatization',
-//             avatar: 'https://via.placeholder.com/48',
-//             subscribed: false
-//           },
-//           {
-//             id: 6,
-//             name: 'Канал 6',
-//             link: 'https://t.me/seo_automatization',
-//             avatar: 'https://via.placeholder.com/48',
-//             subscribed: false
-//           }
-//         ]
-//       }
-//     ];
-
-//     await Giveaway.insertMany(initialData);
-//     logger.info('Initial data loaded');
-//     console.log('Initial data loaded');
-//   }
-// };

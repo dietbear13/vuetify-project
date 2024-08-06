@@ -114,3 +114,110 @@
 {"level":"info","message":"Mongoose connected to db"}
 {"level":"info","message":"Connected to MongoDB"}
 {"level":"error","message":"Ошибка проверки подписки 400: Bad Request: invalid user_id specified","on":{"method":"getChatMember","payload":{"chat_id":1,"user_id":"USER_ID"}},"response":{"description":"Bad Request: invalid user_id specified","error_code":400,"ok":false},"stack":"Error: 400: Bad Request: invalid user_id specified\n    at Telegram.callApi (C:\\Users\\dietb\\VSprojects\\vuetify-project\\node_modules\\telegraf\\lib\\core\\network\\client.js:315:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/dietb/VSprojects/vuetify-project/server.mjs:71:20"}
+{"code":"ENOTFOUND","errno":"ENOTFOUND","level":"error","message":"Ошибка проверки подписки request to https://api.telegram.org/bot7451733807:[REDACTED]/getChatMember failed, reason: getaddrinfo ENOTFOUND api.telegram.org","stack":"FetchError: request to https://api.telegram.org/bot7451733807:[REDACTED]/getChatMember failed, reason: getaddrinfo ENOTFOUND api.telegram.org\n    at ClientRequest.<anonymous> (C:\\Users\\dietb\\VSprojects\\vuetify-project\\node_modules\\telegraf\\node_modules\\node-fetch\\lib\\index.js:1501:11)\n    at ClientRequest.emit (node:events:519:28)\n    at TLSSocket.socketErrorListener (node:_http_client:500:9)\n    at TLSSocket.emit (node:events:519:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","type":"system"}
+{"code":"ENOTFOUND","errno":"ENOTFOUND","level":"error","message":"Ошибка проверки подписки request to https://api.telegram.org/bot7451733807:[REDACTED]/getChatMember failed, reason: getaddrinfo ENOTFOUND api.telegram.org","stack":"FetchError: request to https://api.telegram.org/bot7451733807:[REDACTED]/getChatMember failed, reason: getaddrinfo ENOTFOUND api.telegram.org\n    at ClientRequest.<anonymous> (C:\\Users\\dietb\\VSprojects\\vuetify-project\\node_modules\\telegraf\\node_modules\\node-fetch\\lib\\index.js:1501:11)\n    at ClientRequest.emit (node:events:519:28)\n    at TLSSocket.socketErrorListener (node:_http_client:500:9)\n    at TLSSocket.emit (node:events:519:28)\n    at emitErrorNT (node:internal/streams/destroy:169:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:128:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","type":"system"}
+{"level":"error","message":"Ошибка проверки подписки 400: Bad Request: invalid user_id specified","on":{"method":"getChatMember","payload":{"chat_id":1,"user_id":"USER_ID"}},"response":{"description":"Bad Request: invalid user_id specified","error_code":400,"ok":false},"stack":"Error: 400: Bad Request: invalid user_id specified\n    at Telegram.callApi (C:\\Users\\dietb\\VSprojects\\vuetify-project\\node_modules\\telegraf\\lib\\core\\network\\client.js:315:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/dietb/VSprojects/vuetify-project/server.mjs:71:20"}
+{"level":"error","message":"Ошибка проверки подписки 400: Bad Request: invalid user_id specified","on":{"method":"getChatMember","payload":{"chat_id":1,"user_id":"USER_ID"}},"response":{"description":"Bad Request: invalid user_id specified","error_code":400,"ok":false},"stack":"Error: 400: Bad Request: invalid user_id specified\n    at Telegram.callApi (C:\\Users\\dietb\\VSprojects\\vuetify-project\\node_modules\\telegraf\\lib\\core\\network\\client.js:315:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/dietb/VSprojects/vuetify-project/server.mjs:71:20"}
+{"level":"error","message":"Ошибка проверки подписки 400: Bad Request: invalid user_id specified","on":{"method":"getChatMember","payload":{"chat_id":2,"user_id":"USER_ID"}},"response":{"description":"Bad Request: invalid user_id specified","error_code":400,"ok":false},"stack":"Error: 400: Bad Request: invalid user_id specified\n    at Telegram.callApi (C:\\Users\\dietb\\VSprojects\\vuetify-project\\node_modules\\telegraf\\lib\\core\\network\\client.js:315:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/dietb/VSprojects/vuetify-project/server.mjs:71:20"}
+{"level":"error","message":"Ошибка проверки подписки 400: Bad Request: invalid user_id specified","on":{"method":"getChatMember","payload":{"chat_id":1,"user_id":"USER_ID"}},"response":{"description":"Bad Request: invalid user_id specified","error_code":400,"ok":false},"stack":"Error: 400: Bad Request: invalid user_id specified\n    at Telegram.callApi (C:\\Users\\dietb\\VSprojects\\vuetify-project\\node_modules\\telegraf\\lib\\core\\network\\client.js:315:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/dietb/VSprojects/vuetify-project/server.mjs:71:20"}
+{"level":"error","message":"Ошибка проверки подписки 400: Bad Request: invalid user_id specified","on":{"method":"getChatMember","payload":{"chat_id":1,"user_id":"USER_ID"}},"response":{"description":"Bad Request: invalid user_id specified","error_code":400,"ok":false},"stack":"Error: 400: Bad Request: invalid user_id specified\n    at Telegram.callApi (C:\\Users\\dietb\\VSprojects\\vuetify-project\\node_modules\\telegraf\\lib\\core\\network\\client.js:315:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/Users/dietb/VSprojects/vuetify-project/server.mjs:71:20"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3002"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3000"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3000"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3000"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3000"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:300"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}
+{"level":"info","message":"Server is listening on http://localhost:3001"}
+{"level":"info","message":"Mongoose connected to db"}
+{"level":"info","message":"Connected to MongoDB"}

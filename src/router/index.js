@@ -1,3 +1,5 @@
+// router/index.js
+
 import { createRouter, createWebHistory } from 'vue-router';
 import GiveawayList from '@/pages/index.vue';
 import GiveawayDetail from '@/pages/GiveawayDetail.vue';

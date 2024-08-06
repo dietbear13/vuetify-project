@@ -1,0 +1,107 @@
+[
+  {
+    "telegramId": "111111",
+    "subscriptions": [
+      {
+        "giveawayId": "giveaway1_id",
+        "channelId": 1,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway1_id",
+        "channelId": 2,
+        "subscribed": false
+      },
+      {
+        "giveawayId": "giveaway2_id",
+        "channelId": 3,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway2_id",
+        "channelId": 4,
+        "subscribed": false
+      },
+      {
+        "giveawayId": "giveaway3_id",
+        "channelId": 5,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway3_id",
+        "channelId": 6,
+        "subscribed": false
+      }
+    ]
+  },
+  {
+    "telegramId": "111111",
+    "subscriptions": [
+      {
+        "giveawayId": "giveaway1_id",
+        "channelId": 1,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway1_id",
+        "channelId": 2,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway2_id",
+        "channelId": 3,
+        "subscribed": false
+      },
+      {
+        "giveawayId": "giveaway2_id",
+        "channelId": 4,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway3_id",
+        "channelId": 5,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway3_id",
+        "channelId": 6,
+        "subscribed": true
+      }
+    ]
+  },
+  {
+    "telegramId": "111111",
+    "subscriptions": [
+      {
+        "giveawayId": "giveaway1_id",
+        "channelId": 1,
+        "subscribed": false
+      },
+      {
+        "giveawayId": "giveaway1_id",
+        "channelId": 2,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway2_id",
+        "channelId": 3,
+        "subscribed": false
+      },
+      {
+        "giveawayId": "giveaway2_id",
+        "channelId": 4,
+        "subscribed": false
+      },
+      {
+        "giveawayId": "giveaway3_id",
+        "channelId": 5,
+        "subscribed": true
+      },
+      {
+        "giveawayId": "giveaway3_id",
+        "channelId": 6,
+        "subscribed": true
+      }
+    ]
+  }
+]

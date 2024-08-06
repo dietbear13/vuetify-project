@@ -1,11 +1,12 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router';
-import vuetify from './plugins/vuetify';
+import { registerPlugins } from './plugins';
 import axios from 'axios';
 
 const app = createApp(App);
+
 app.config.globalProperties.$http = axios;
-app.use(router);
-app.use(vuetify);
+
+registerPlugins(app);
+
 app.mount('#app');

@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "node server.js",
+    "start": "node server.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore"
@@ -20,6 +20,7 @@
     "mongoose": "^8.5.2",
     "morgan": "^1.10.0",
     "node": "^20.16.0",
+    "node-telegram-bot-api": "^0.66.0",
     "pouchdb": "^9.0.0",
     "pouchdb-browser": "^9.0.0",
     "roboto-fontface": "*",

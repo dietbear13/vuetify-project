@@ -1,7 +1,7 @@
 // server/index.js
 import express from 'express';
 import mongoose from 'mongoose';
-import giveaways from '..//..//vuetify-project//api//giveaways';
+import giveaways from './api/giveaways';
 
 const app = express();
 

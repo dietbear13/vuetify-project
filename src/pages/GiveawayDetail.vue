@@ -18,7 +18,7 @@
                     <v-list-item-title class="channel-name">{{ channel.name }}</v-list-item-title>
                   </v-list-item-content>
                 </v-col>
-                <v-col cols="3" class="text-right">
+                <v-col cols="6" class="text-right">
                   <template v-if="!channel.subscribed">
                     <v-btn class="custom-btn mx-2" elevation="24" color="primary" @click.stop="checkSubscription(channel)">
                       Проверить
@@ -57,7 +57,7 @@ const giveaways = ref([]);
 
 const loadGiveaways = async () => {
   try {
-    const response = await axios.get('http://localhost:5173/api/giveaways');
+    const response = await axios.get('https://7519-45-8-144-35.ngrok-free.app/api/giveaways');
     giveaways.value = response.data;
   } catch (error) {
     console.error('Ошибка загрузки данных', error);
@@ -78,7 +78,8 @@ const checkSubscription = async (channel) => {
   try {
     const response = await axios.post('http://localhost:5173/api/check-subscription', {
       userId: 'USER_ID', // Замените на текущий userId
-      channelId: channel.id
+      channelId: channel.id,
+      giveawayId: giveaway.value._id // Передаем ID розыгрыша
     });
     if (response.data.isMember) {
       channel.subscribed = true;
